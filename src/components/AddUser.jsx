@@ -39,7 +39,7 @@ function AddUser() {
       */
       console.log(response);
       alert("User added Successfully");
-      navigate("/");
+      navigate("/users");
     } catch (error) {
       console.log(error);
     }
@@ -55,7 +55,7 @@ function AddUser() {
             </a>
             <h2>Add User</h2>
             <div>
-              <Link to={"/"}> Display users</Link>
+              <Link to={"/users"}> Display users</Link>
             </div>
           </div>
         </nav>

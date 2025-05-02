@@ -7,6 +7,7 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<UserList />} />
+        <Route path="/users" element={<UserList />} />
         <Route path="/add-user" element={<AddUser />} />
       </Routes>
     </div>

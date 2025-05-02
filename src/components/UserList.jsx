@@ -45,7 +45,6 @@ function UserList() {
               Navbar
             </a>
             <h2>View Users</h2>
-
             <div>
               <Link to={"/add-user"}> Add user</Link>
             </div>

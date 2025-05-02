@@ -10,6 +10,7 @@ function AddUser() {
 
   const navigate = useNavigate();
 
+  // post api for Form submit
   const submit = async (e) => {
     e.preventDefault();
 

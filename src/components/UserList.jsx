@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 function UserList() {
   const [userData, setUserData] = useState([]);
 
+  // Use Effect to fetch the data only once when the component reloads
   useEffect(() => {
     const display = async () => {
       try {
@@ -13,7 +14,7 @@ function UserList() {
         );
         console.log(response);
 
-        setUserData(response.data); // Correct key
+        setUserData(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
